@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+</html>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Deploys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Leavdown</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deploys.each do |deploy| %>
+      <tr>
+        <td><%= deploy.name %></td>
+        <td><%= deploy.leavdown %></td>
+	<td><%= form_for deploy, :remote => true do |f| %>
+	    <%= f.check_box :leavdown, :checked => deploy.leavdown, :class => 'leavdown' %>
+	    <% end %>
+	</td>
+        <td><%= link_to 'Show', deploy %></td>
+        <td><%= link_to 'Edit', edit_deploy_path(deploy) %></td>
+        <td><%= link_to 'Destroy', deploy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+  	 <%= javascript_tag do %>
+                $(document).ready(function(){
+
+                $('.leavdown').click(function() {
+                   $(this).parents('form:first').submit();
+                  });
+                });
+            <% end %>
+
+
+<br>
+
+<!-- <%= link_to 'New Deploy', new_deploy_path %> -->
+
+</html>

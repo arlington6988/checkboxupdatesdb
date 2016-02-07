@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+<h1>Deploys</h1>
+  <table>
+      <tr>
+	<th>name</th>
+        <th>leavedown</th>
+	<th>leavedown2</th>
+      </tr>
+  <% @deploys.each do |deploy| %> 
+      <tr>
+ 	<td><%= deploy.name %></td>
+	<td><%= deploy.leavdown %></td> 
+	<td><%= form_for deploy, :remote => true do |f| %>
+	    <%= f.check_box :leavdown, :checked => deploy.leavdown, :class => 'leavdown' %>
+	    <% end %>
+	    <%= javascript_tag do %>
+		$(document).ready(function(){
+		
+		$('.leavdown').click(function(){
+		  $(this).parents('form:first').submit();
+		});
+	      });
+	    <% end %>
+	</td>
+      </tr>
+  <% end %>
+  </body>
+</html>
+ 

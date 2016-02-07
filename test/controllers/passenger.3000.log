@@ -1,0 +1,28 @@
+[ 2016-02-05 17:56:08.9574 24730/7f46f92ef740 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-02-05 17:56:08.9632 24733/7f99e6198740 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2016-02-05 17:56:08.9633 24733/7f99e6198740 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2016-02-05 17:56:08.9654 24733/7f99e6198740 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 24733
+[ 2016-02-05 17:56:08.9723 24738/7f48bf832740 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2016-02-05 17:56:08.9728 24738/7f48bf832740 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 24738
+2016/02/05 17:56:11 [error] 24761#0: *4 "/home/jjones2/gitdir/simple_site/test/controllers/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+
+
+[ 2016-02-05 17:56:19.4943 24738/7f48bd944700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-02-05 17:56:19.4944 24733/7f99d7fff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-02-05 17:56:19.4944 24738/7f48bf832740 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-02-05 17:56:19.4944 24733/7f99e6198740 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-02-05 17:56:19.4945 24738/7f48bd944700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2016-02-05 17:56:19.4946 24738/7f48bd143700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-02-05 17:56:19.4947 24738/7f48bd143700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-02-05 17:56:19.4948 24733/7f99d6f7c700 Ser/Server.h:759 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-02-05 17:56:19.4949 24733/7f99d6f7c700 Ser/Server.h:444 ]: [ServerThr.3] Shutdown finished
+[ 2016-02-05 17:56:19.4950 24733/7f99d66fa700 Ser/Server.h:759 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-02-05 17:56:19.4950 24733/7f99d66fa700 Ser/Server.h:444 ]: [ServerThr.4] Shutdown finished
+[ 2016-02-05 17:56:19.4951 24733/7f99d7fff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-02-05 17:56:19.4951 24733/7f99d7fff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2016-02-05 17:56:19.4952 24733/7f99d77fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-02-05 17:56:19.4953 24733/7f99d77fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2016-02-05 17:56:19.4953 24733/7f99d5e78700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-02-05 17:56:19.4953 24733/7f99d5e78700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2016-02-05 17:56:19.4956 24738/7f48bf832740 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2016-02-05 17:56:19.5090 24733/7f99e6198740 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished

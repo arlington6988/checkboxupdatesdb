@@ -1,2 +1,2 @@
 # checkboxupdatesdb
-Example of using JavaScript to update Rails db via checkbox in view
+Example of using JavaScript to update Rails db via checkbox in view.
